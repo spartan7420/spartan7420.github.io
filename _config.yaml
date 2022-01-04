@@ -1,0 +1,32 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  authors:
+    output: true
+
+# Set default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: "/page/:num/"
+  title: ":title"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: false
+
+gems:
+  - jekyll-paginate-v2

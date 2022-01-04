@@ -1,0 +1,9 @@
+nav { display: flex; flex-direction: row; align-items: center; gap: 10px; height: 50px; }
+
+nav a { padding: 10px 40px; border-radius: 5px; border: 1px solid black; color: #1f1e1e; width: fit-content; text-decoration: none; font-size: 16px; display: flex; align-items: center; justify-content: center; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+nav a, nav a:hover, nav a:active, nav a:visited, nav a:focus { text-decoration: none; }
+
+.current { background-color: cadetblue; color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */

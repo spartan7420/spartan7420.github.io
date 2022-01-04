@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"nav {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  gap: 10px;\r\n  height: 50px;\r\n  a {\r\n    padding: 10px 40px;\r\n    border-radius: 5px;\r\n    border: 1px solid black;\r\n    color: rgb(31, 30, 30);\r\n    width: fit-content;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-weight: bolder;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n  }\r\n  a, a:hover, a:active, a:visited, a:focus {\r\n    text-decoration:none;\r\n  }\r\n}\r\n.current {\r\n  background-color: cadetblue;\r\n  color: #fff;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,GAAG,CAAC,EACF,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,GAAG,EACnB,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,IAAI,EACT,MAAM,EAAE,IAAI,GAkBb;;AAvBD,AAME,GANC,CAMD,CAAC,CAAC,EACA,OAAO,EAAE,SAAS,EAClB,aAAa,EAAE,GAAG,EAClB,MAAM,EAAE,eAAe,EACvB,KAAK,EAAE,OAAe,EACtB,KAAK,EAAE,WAAW,EAClB,eAAe,EAAE,IAAI,EACrB,SAAS,EAAE,IAAI,EACf,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,MAAM,EACnB,eAAe,EAAE,MAAM,EACvB,WAAW,EAAE,MAAM,EACnB,WAAW,EAAE,mCAAmC,GACjD;;AAnBH,AAoBE,GApBC,CAoBD,CAAC,EApBH,GAAG,CAoBE,CAAC,CAAC,KAAK,EApBZ,GAAG,CAoBW,CAAC,CAAC,MAAM,EApBtB,GAAG,CAoBqB,CAAC,CAAC,OAAO,EApBjC,GAAG,CAoBgC,CAAC,CAAC,KAAK,CAAC,EACvC,eAAe,EAAC,IAAI,GACrB;;AAEH,AAAA,QAAQ,CAAC,EACP,gBAAgB,EAAE,SAAS,EAC3B,KAAK,EAAE,IAAI,GACZ"
+}

@@ -1,0 +1,12 @@
+<nav>
+    <!-- Link to Home has been added separately to avoid it getting
+    set to active in the rest of the pages as "/" is always contained within page.url -->
+    <a href="/" {% if page.url == "/" %} class="current" {% endif %}>
+        Home
+    </a>
+    {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url contains item.link %} class="current" {% endif %}>
+            {{ item.name}}
+        </a>
+    {% endfor %}
+</nav>
