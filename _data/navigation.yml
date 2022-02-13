@@ -1,6 +1,6 @@
 # - name: Home
 #   link: /index.html
-- name: About Us
+- name: About
   link: /about/
-- name: Blog
-  link: /blog/
+- name: Contact
+  link: /contact/

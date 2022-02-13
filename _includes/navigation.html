@@ -1,12 +1,42 @@
-<nav>
-    <!-- Link to Home has been added separately to avoid it getting
-    set to active in the rest of the pages as "/" is always contained within page.url -->
-    <a href="/" {% if page.url == "/" %} class="current" {% endif %}>
-        Home
-    </a>
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url contains item.link %} class="current" {% endif %}>
-            {{ item.name}}
-        </a>
-    {% endfor %}
-</nav>
+<header>
+
+    <div class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <div class="nav-hidden">
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <i class="fas fa-times nav-active"></i>
+    </div>
+    <div class="logo">
+        <div class="logo-img">
+            <img src="https://avatars.githubusercontent.com/u/55148309?v=4" alt="github-profile-link">
+        </div>
+        <div class="title">
+            <a href="https://github.com/arads7420">arads7420</a>
+        </div>
+    </div>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+            <li>
+                <a href="/" {% if page.url == "/" %} class="current" {% endif %}>
+                    Projects
+                </a>
+            </li>
+            {% for item in site.data.navigation %}
+                <li>
+                    <a href="{{ item.link }}" {% if page.url contains item.link %} class="current" {% endif %}>
+                        {{ item.name}}
+                    </a>
+                </li>
+            {% endfor %}
+            <li>
+                <a class="theme-toggle-container">
+                    <i class="fas fa-sun" id="theme-toggle" onclick="modeSwitcher()"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

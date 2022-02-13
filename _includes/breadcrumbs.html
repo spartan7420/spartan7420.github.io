@@ -1,0 +1,7 @@
+<div id="breadcrumbs">
+    {% for bread in page.breadcrumbs %} 
+        <a href="{{ bread.url }}">{{ bread.title }}</a> 
+        {% if bread}
+        ⟩
+    {% endfor %}
+</div>
