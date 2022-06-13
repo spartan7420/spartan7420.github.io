@@ -86,11 +86,11 @@ body { overflow-x: hidden; background-color: var(--main-background-color) !impor
 
 .project-container .project-card .project-card-section .details { flex: 2; font-family: "Inter", sans-serif; }
 
-.project-container .project-card .project-card-section .details .card-link { text-decoration: none; color: var(--project-card-text-clr); border: 1px solid #efefef; padding: 3px 10px; border-radius: 9px; }
+.project-container .project-card .project-card-section .details .card-link { text-decoration: none; color: var(--project-card-text-clr); border: 1px solid #efefef; padding: 3px 10px; font-size: 0.8rem; border-radius: 9px; }
 
 .project-container .project-card .project-card-section .details .card-link i { margin-right: 3px; }
 
-.project-container .project-card .project-card-section .links { display: flex; gap: 10px; align-items: flex-end; }
+.project-container .project-card .project-card-section .links { display: flex; gap: 10px; font-size: 0.8rem; align-items: flex-end; }
 
 @media (max-width: 966px) { .project-container .project-card .project-card-section { gap: 10px; } .wrapper .content { padding: 3.25rem 1rem; } .page-title { margin-bottom: 40px; } }
 

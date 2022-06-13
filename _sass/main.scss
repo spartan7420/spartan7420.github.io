@@ -400,6 +400,7 @@ body {
           color: var(--project-card-text-clr);
           border: 1px solid #efefef;
           padding: 3px 10px;
+          font-size: 0.8rem;
           border-radius: 9px;
           i {
             margin-right: 3px;
@@ -410,6 +411,7 @@ body {
         display: flex;
         // justify-content: flex-end;
         gap: 10px;
+        font-size: 0.8rem;
         align-items: flex-end;
       }
     }
