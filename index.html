@@ -5,39 +5,41 @@ layout: default
 <h1 class="page-title">Projects</h1>
 <div class="project-container">
     {% for project in site.projects %}
-    <div class="project-card">
-        <div class="project-header">
-            <!-- Contains date, title and img -->
-            <div class="header-text">
-                <div class="project-title">
-                    <a href="{{ project.link }}">{{ project.name }}</a>
+    <div class="p-container">
+        {% if project.img %}
+        <div class="header-img">
+            <img 
+            src="{{ project.img }}"
+            alt=""
+            >
+        </div>
+        {% endif %}
+        <div class="project-card">
+            <div class="project-header">
+                <!-- Contains date, title and img -->
+                <div class="header-text">
+                    <div class="project-title">
+                        <a href="{{ project.link }}">{{ project.name }}</a>
+                    </div>
                 </div>
             </div>
-            {% if project.img %}
-            <div class="header-img">
-                <img 
-                src="{{ project.img }}"
-                alt=""
-                >
+            <div class="project-card-section">
+                <div class="title"><i class="fa-solid fa-circle-info"></i>Desc</div>
+                <div class="details">{{ project.desc }}</div>
             </div>
-            {% endif %}
-        </div>
-        <div class="project-card-section">
-            <div class="title"><i class="fa-solid fa-circle-info"></i>Desc</div>
-            <div class="details">{{ project.desc }}</div>
-        </div>
-        <div class="project-card-section">
-            <div class="title"><i class="fa-solid fa-code"></i>Tech</div>
-            <div class="details">{{ project.tech }}</div>
-        </div>
-        <div class="project-card-section">
-            <!-- For links to project and github -->
-            <div class="title"></div>  
-            <div class="details links">
-                <a href="{{ project.link }}" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
-                <a href="{{ project.github }}" class="card-link"><i class="fa-brands fa-github"></i> Github</a>
+            <div class="project-card-section">
+                <div class="title"><i class="fa-solid fa-code"></i>Tech</div>
+                <div class="details">{{ project.tech }}</div>
             </div>
-        </div>
+            <div class="project-card-section">
+                <!-- For links to project and github -->
+                <div class="title"></div>  
+                <div class="details links">
+                    <a href="{{ project.link }}" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
+                    <a href="{{ project.github }}" class="card-link"><i class="fa-brands fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>     
     </div>
     {% endfor %}
 </div>

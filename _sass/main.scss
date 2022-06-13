@@ -11,7 +11,7 @@
 
 html,
 html[data-theme="light"] {
-  --main-background-color: #fafafa;
+  --main-background-color: #ffffff;
   --nav-font-color-lg: #303135;
   --nav-font-color-sm: #fafafa;
   --page-title-color: #303135;
@@ -24,34 +24,38 @@ html[data-theme="light"] {
   --nav-highlight-color-sm: #8eabc0;
   --nav-selected-color-sm: #efefef;
   --nav-selected-color-lg: #303135;
+  --p-bdr-clr: #efefef;
   --project-card-bdr-clr: #c4c4c4;
   --project-card-bg-clr: #ffffff;
   --project-card-text-clr: #565660;
+  --project-card-title-clr: #565660;
 }
 
 html[data-theme="dark"] {
-  --main-background-color: #4b4b4d;
+  --main-background-color: #262626;
   --nav-font-color-lg: #efefef;
   --nav-font-color-sm: #fafafa;
   --page-title-color: #efefef;
   --logo-img-border: #c4c4c4;
   --burger-color: #efefef;
   --nav-highlight-color-lg: #efefef;
-  --nav-background-color-lg: #2e2e2f;
+  --nav-background-color-lg: #262626;
   --nav-background-color-sm: #5e829c;
   --nav-border-clr: #5d636b;
   --nav-highlight-color-sm: #8eabc0;
   --nav-selected-color-sm: #efefef;
   --nav-selected-color-lg: #303135;
+  --p-bdr-clr: #444444;
   --project-card-bdr-clr: none;
   --project-card-bg-clr: #282a33;
-  --project-card-text-clr: #dddddd;
+  --project-card-text-clr: #bfbfbf;
+  --project-card-title-clr: #efefef;
 }
 
 @media (prefers-color-scheme: dark) {
   html,
   html[data-theme="light"] {
-    --main-background-color: #fafafa;
+    --main-background-color: #ffffff;
     --nav-font-color-lg: #303135;
     --nav-font-color-sm: #fafafa;
     --page-title-color: #303135;
@@ -64,13 +68,15 @@ html[data-theme="dark"] {
     --nav-selected-color-lg: #303135;
     --nav-background-color-sm: #5e829c;
     --nav-highlight-color-sm: #8eabc0;
+    --p-bdr-clr: #efefef;
     --project-card-bdr-clr: #c4c4c4;
     --project-card-bg-clr: #ffffff;
     --project-card-text-clr: #565660;
+    --project-card-title-clr: #565660;
   }
 
   html[data-theme="dark"] {
-    --main-background-color: #4b4b4d;
+    --main-background-color: #262626;
     --nav-font-color-lg: #efefef;
     --nav-font-color-sm: #fafafa;
     --page-title-color: #efefef;
@@ -79,13 +85,15 @@ html[data-theme="dark"] {
     --nav-selected-color-sm: #efefef;
     --nav-selected-color-lg: #303135;
     --nav-highlight-color-lg: #efefef;
-    --nav-background-color-lg: #4b4b4d;
+    --nav-background-color-lg: #262626;
     --nav-background-color-sm: #5e829c;
     --nav-border-clr: #5d636b;
     --nav-highlight-color-sm: #8eabc0;
+    --p-bdr-clr: #444444;
     --project-card-bdr-clr: none;
     --project-card-bg-clr: #282a33;
-    --project-card-text-clr: #dddddd;
+    --project-card-text-clr: #bfbfbf;
+    --project-card-title-clr: #efefef;
   }
 }
 
@@ -130,7 +138,7 @@ body {
 .logo {
   display: flex;
   position: relative;
-  top: -150px;
+  top: -180px;
   align-items: center;
   gap: 10px;
   .title {
@@ -322,7 +330,23 @@ body {
     text-decoration: none;
   }
 }
-
+.p-container {
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: var(--p-bg-clr);
+  border: 1px solid var(--p-bdr-clr);
+  overflow: hidden;
+}
+.header-img {
+  width: 100%;
+  // border: 1px solid var(--project-card-bdr-clr);
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -332,9 +356,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--project-card-bdr-clr);
-    background-color: var(--project-card-bg-clr);
+    // background-color: #48404b;
     color: var(--project-card-text-clr);
     max-width: 400px;
     .project-header {
@@ -349,29 +371,14 @@ body {
         // border: 1px solid black;
         height: 100%;
         gap: 25px;
-        .project-date {
-          font-family: "Inter", sans-serif;
-        }
         .project-title {
           font-size: 1.7rem;
           font-weight: 800;
           font-family: "Inter", sans-serif;
           a {
             text-decoration: none;
-            color: var(--project-card-text-clr);
+            color: var(--project-card-title-clr);
           }
-        }
-      }
-      .header-img {
-        width: 7.75rem;
-        height: 7.75rem;
-        border: 1px solid var(--project-card-bdr-clr);
-        border-radius: 10px;
-        overflow: hidden;
-        img {
-          max-width: 100%;
-          height: 100%;
-          object-fit: cover;
         }
       }
     }
@@ -419,6 +426,9 @@ body {
 }
 
 @media (max-width: 966px) {
+  .p-container {
+    max-width: 100%;
+  }
   .project-container {
     .project-card {
       .project-card-section {
