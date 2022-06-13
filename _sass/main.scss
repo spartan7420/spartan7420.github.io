@@ -121,7 +121,7 @@ body {
 }
 
 .page-title {
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 3rem;
   color: var(--page-title-color);
   margin-bottom: 70px;
@@ -138,7 +138,7 @@ body {
       text-decoration: none;
       color: var(--nav-font-color-lg);
       font-size: 1.5rem;
-      font-family: "Nunito", sans-serif;
+      font-family: "Inter", sans-serif;
     }
   }
   .logo-img {
@@ -177,7 +177,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Inter", monospace;
     font-weight: 400;
     color: var(--nav-font-color-lg);
   }
@@ -345,16 +345,16 @@ body {
       .header-text {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         // border: 1px solid black;
         height: 100%;
         gap: 25px;
         .project-date {
-          font-family: "Outfit", sans-serif;
+          font-family: "Inter", sans-serif;
         }
         .project-title {
-          align-self: center;
           font-size: 2rem;
-          font-family: "Nunito", sans-serif;
+          font-family: "Inter", sans-serif;
           a {
             text-decoration: none;
             color: var(--project-card-text-clr);
@@ -379,13 +379,12 @@ body {
       align-items: center;
       padding: 10px 0;
       gap: 20px;
-      border-top: 1px solid var(--project-card-bdr-clr);
       .title {
         display: flex;
         align-items: center;
         flex: 1;
         text-transform: uppercase;
-        font-family: "Nunito", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 0.875rem;
         i {
           width: 20px;
@@ -394,7 +393,7 @@ body {
       }
       .details {
         flex: 2;
-        font-family: "Outfit", sans-serif;
+        font-family: "Inter", sans-serif;
         .card-link {
           text-decoration: none;
           color: var(--project-card-text-clr);
@@ -444,7 +443,7 @@ body {
 }
 
 .contact-form {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   width: 70%;
   label {
     color: var(--project-card-text-clr);
@@ -461,13 +460,13 @@ body {
     border-radius: 14px;
     border: 1px solid var(--project-card-bdr-clr);
     background-color: var(--project-card-bg-clr);
-    color: var(--page-title-color);
-    font-family: "Nunito", sans-serif;
+    color: var(--project-card-text-clr);
+    font-family: "Inter", sans-serif;
     padding: 70px 70px;
     h2 {
       font-size: 2.25rem;
       margin-bottom: 30px;
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
     p {
       margin: 10px 0;
@@ -477,7 +476,7 @@ body {
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 100px 100px;
+    padding: 70px 70px;
     .my-photo {
       display: flex;
       align-items: center;
@@ -497,7 +496,7 @@ body {
     .my-details {
       display: flex;
       flex-direction: column;
-      font-family: "Nunito", sans-serif;
+      font-family: "Inter", sans-serif;
       gap: 10px;
       .my-name {
         font-size: 3rem;
@@ -598,7 +597,7 @@ body {
       h2 {
         font-size: 1.4rem;
         margin-bottom: 30px;
-        font-family: 'Outfit', sans-serif;
+        color: var(--project-card-text-clr);
       }
       p {
         margin: 10px 0;
